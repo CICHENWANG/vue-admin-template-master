@@ -157,6 +157,16 @@ export const constantRoutes = [
       }
     ]
   },
+  {
+    path: '/memberManage',
+    component: Layout,
+    children: [{
+      path: 'memberManage',
+      name: 'MemberManage',
+      component: () => import('@/views/memberManage/index.vue'),
+      meta: { title: '成员管理', icon: 'dashboard' }
+    }]
+  },
 
   {
     path: 'external-link',
