@@ -158,12 +158,12 @@ export const constantRoutes = [
     ]
   },
   {
-    path: '/memberManage',
+    path: '/member',
     component: Layout,
     children: [{
-      path: 'memberManage',
-      name: 'MemberManage',
-      component: () => import('@/views/memberManage/index.vue'),
+      path: 'member',
+      name: 'Member',
+      component: () => import('@/views/member/index.vue'),
       meta: { title: '成员管理', icon: 'dashboard' }
     }]
   },
