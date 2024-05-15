@@ -1,4 +1,6 @@
 import Vue from 'vue'
+// import ElementUI from 'element-ui';//引入element ui
+// import 'element-ui/lib/theme-chalk/index.css';
 
 import 'normalize.css/normalize.css' // A modern alternative to CSS resets
 
@@ -34,6 +36,7 @@ Vue.use(ElementUI, { locale })
 // Vue.use(ElementUI)
 
 Vue.config.productionTip = false
+Vue.use(ElementUI);
 
 new Vue({
   el: '#app',
