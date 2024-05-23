@@ -2,10 +2,10 @@ import { login, logout, getInfo } from '@/api/user'
 import { getToken, setToken, removeToken } from '@/utils/auth'
 import { resetRouter } from '@/router'
 
-const getDefaultState = () => {
+export const getDefaultState = () => {
   return {
     token: getToken(),
-    name: '',
+    name: 'moumou',
     avatar: ''
   }
 }
