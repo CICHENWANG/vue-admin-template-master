@@ -1,6 +1,6 @@
 <template>
     
-<div class="container" style="margin-left: 20px;">
+<div v-if="showm" class="container" style="margin-left: 20px;">
      <div class="Main">
         <div class="range">
           <el-card class="box-card">
@@ -56,17 +56,21 @@ export default {
     return {
       // activeIndex: '2',
       activeIndex2: '2',
+      
       name:{}
     };
   },
   methods: {
     handleSelect(key, keyPath) {
       console.log(key, keyPath);
-    }
+    },
+  
   },
   created(){
           this.name = getDefaultState();
-  }
+  },
+  props:['showm']
+  
 }
 
 </script>

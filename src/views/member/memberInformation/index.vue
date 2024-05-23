@@ -1,5 +1,5 @@
 <template>
-  <div class="app-container">
+  <div v-if="showi" class="app-container">
     <!--    <set-navigation />-->
     <div class="allowShare">
       <p>是否允许页面被分享到组织外？</p>
@@ -64,6 +64,7 @@ export default {
       radio6: '1',
       activeIndex: '1',
       activeIndex2: '1'
+      
     }
   },
 
@@ -71,7 +72,8 @@ export default {
     handleSelect(key, keyPath) {
       console.log(key, keyPath)
     }
-  }
+  },
+  props:['showi']
 }
 </script>
 <style scoped>
